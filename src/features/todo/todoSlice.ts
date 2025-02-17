@@ -9,11 +9,13 @@ interface Todo {
 
 interface TodoState {
   todos: Todo[]
+  filter: "all" | "completed" | "pending"
 }
 
 // Initial state
 const initialState: TodoState = {
   todos: [],
+  filter: "all",
 }
 
 // Create the slice
@@ -33,11 +35,14 @@ export const todoSlice = createSlice({
     deleteTodo: (state, action: PayloadAction<number>) => {
       state.todos = state.todos.filter(todo => todo.id !== action.payload)
     },
+    setFilter: (state, action: PayloadAction<"all" | "completed" | "pending">) => {
+      state.filter = action.payload
+    },
   },
 })
 
 // Export the actions
-export const { addTodo, toggleTodo, deleteTodo } = todoSlice.actions
+export const { addTodo, toggleTodo, deleteTodo, setFilter } = todoSlice.actions
 
 // Export the reducer
 export default todoSlice.reducer
