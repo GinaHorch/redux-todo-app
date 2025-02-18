@@ -38,6 +38,7 @@ Redux Persist – Saves Redux state across refreshes
 CSS Modules – Scoped styles for modular design
 
 🏗 Project Structure
+```graphql
 my-practice/
 │── src/
 │   ├── app/
@@ -56,6 +57,7 @@ my-practice/
 │── README.md
 │── tsconfig.json
 │── vite.config.ts
+```
 
 🌟 Features
 ✅ State Management with Redux Toolkit
