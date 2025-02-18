@@ -29,15 +29,15 @@ npm run dev
 ```
 Then open http://localhost:5173 in your browser.
 
-🛠 Tech Stack
-Vite – Fast front-end build tool
-React – Component-based UI
-TypeScript – Static typing for better maintainability
-Redux Toolkit – Simplifies state management
-Redux Persist – Saves Redux state across refreshes
-CSS Modules – Scoped styles for modular design
+## **🛠 Tech Stack**
+* **Vite** – Fast front-end build tool
+* **React** – Component-based UI
+* **TypeScript** – Static typing for better maintainability
+* **Redux Toolkit** – Simplifies state management
+* **Redux Persist** – Saves Redux state across refreshes
+* **CSS Modules** – Scoped styles for modular design
 
-🏗 Project Structure
+## **🏗 Project Structure**
 ```graphql
 my-practice/
 │── src/
@@ -59,20 +59,19 @@ my-practice/
 │── vite.config.ts
 ```
 
-🌟 Features
-✅ State Management with Redux Toolkit
+## **🌟 Features**
+### ✅ **State Management with Redux Toolkit**
 Redux Toolkit (@reduxjs/toolkit) simplifies state management:
-
-Slices (todoSlice.ts) manage To-Do state (add, toggle, delete, filter).
-Reducers handle UI updates efficiently.
-✅ Redux Persist (State Persistence)
-Todos remain saved across page refreshes.
-Configured via redux-persist in store.ts.
-✅ Filters (All, Completed, Pending)
-Users can filter tasks using Redux state.
-✅ CSS Modules for Styling
-Scoped styles avoid conflicts with global styles.
-Responsive design works on mobile screens.
+- **Slices** (todoSlice.ts) manage To-Do state (add, toggle, delete, filter).
+- **Reducers** handle UI updates efficiently.
+### **✅ Redux Persist (State Persistence)**
+- Todos remain saved across page refreshes.
+- Configured via redux-persist in store.ts.
+### **✅ Filters (All, Completed, Pending)**
+- Users can filter tasks using Redux state.
+### **✅ CSS Modules for Styling**
+- Scoped styles avoid conflicts with global styles.
+- Responsive design works on mobile screens.
 
 📜 Available Scripts
 ```sh
