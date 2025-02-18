@@ -1,7 +1,9 @@
 # Redux To-Do App (Vite + Redux Toolkit + Redux Persist)
 
 This is a **Redux-powered To-Do List app** built using [Vite](https://vitejs.dev/), [Redux Toolkit](https://redux-toolkit.js.org/), and [TypeScript](https://www.typescriptlang.org/).  
+
 It supports:
+
 ✅ **Adding tasks**  
 ✅ **Marking tasks as complete/incomplete**  
 ✅ **Filtering tasks (All, Completed, Pending)**  
