@@ -1,0 +1,152 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .input {
+    padding: 8px;
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .addButton {
+    padding: 8px 15px;
+    background-color: #28a745;    
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;    
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .filterButton {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+    transition: background 0.3s;
+  }
+  
+  .activeFilter {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .todoList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: white;
+    transition: box-shadow 0.3s;
+    word-wrap: break-word; /* Allow text to break */
+    overflow-wrap: break-word;
+  }
+  
+  .todoText {
+    flex: 1;
+    text-align: left;
+    max-width: 75%; /* Prevent text from squashing */
+    word-wrap: break-word; /* Allow long words to wrap */
+    overflow-wrap: break-word;
+  }
+  
+  .toggleButton {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ffc107;
+    color: black;
+    transition: background 0.3s;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      width: 95%; /* Make it fit smaller screens */
+      padding: 15px;
+    }
+  
+    .input {
+      width: 100%;
+    }
+  
+    .todoItem {
+      flex-direction: column; /* Stack text and buttons vertically */
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .todoText {
+      max-width: 100%;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .toggleButton,
+    .deleteButton {
+      width: 100%; /* Full width buttons on mobile */
+      margin-top: 5px;
+    }
+  }
